@@ -28,6 +28,39 @@
     <script src="js/route.js"></script>
   </head>
   <body ng-app="starter">
-   <ion-view></ion-view>
+          <ion-pane>
+              <div class="row">
+                  <div class="col text-center">
+                      <img class="logo" src="img/Logo.png" />
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="col text-center">
+                      <div class="list">
+                          <label class="item item-input">
+                              <input type="email" placeholder="Email Address" />
+                          </label>
+                          <label class="item item-input">
+                              <input type="password" placeholder="Password" />
+                          </label>
+                          <span class="forgot-password">
+                              Forgot Password
+                          </span>
+                      </div>
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="col text-center">
+                      <input type="button" value="Login" class="button button-dark" />
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="col text-center ">
+                      <span>
+                          <a class="font-class" ng-href="templates/signUp.html">Not a member? Sign Up</a>
+                      </span>
+                  </div>
+              </div>
+          </ion-pane>
   </body>
 </html>
