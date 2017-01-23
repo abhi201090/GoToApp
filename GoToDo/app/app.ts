@@ -3,7 +3,7 @@
 // 'starter' is the name of this angular module example (also set in a <body> attribute in index.html)
 // the 2nd parameter is an array of 'requires'
 // 'starter.controllers' is found in controllers.js
-angular.module('starter', ['ionic'])
+var app = angular.module('starter', ['ionic'])
     .run(($ionicPlatform: ionic.platform.IonicPlatformService) => {
         $ionicPlatform.ready(() => {
         // hide the accessory bar by default (remove this to show the accessory bar above the keyboard
