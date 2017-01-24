@@ -1,12 +1,14 @@
 ﻿app.config(function ($stateProvider, $urlRouterProvider) {
-    $stateProvider.state('index', {
-        Url: '/',
+    console.log('Was here!');
+    $stateProvider.state('login', {
+        url: '/login',
         templateUrl: 'templates/login.html'
     })
         .state('signUp',
         {
-            Url:'/signUp',
-            templateUrl:'templates/signUp.html'
+            url: '/signUp',
+            templateUrl: 'templates/signUp.html'
         });
-    $urlRouterProvider.otherwise('/');
+    $urlRouterProvider.otherwise('/login');
+    console.log(window.location.href);
 });
