@@ -4,10 +4,16 @@
         url: '/login',
         templateUrl: 'templates/login.html'
     })
-        .state('signUp',
+     .state('signUp',
         {
             url: '/signUp',
             templateUrl: 'templates/signUp.html'
+        })
+        
+    .state('forgotPwd',
+        {
+            url: '/forgotPwd',
+            templateUrl: 'templates/forgotPwd.html'
         });
     $urlRouterProvider.otherwise('/login');
     console.log(window.location.href);

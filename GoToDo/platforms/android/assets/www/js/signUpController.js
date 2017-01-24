@@ -971,4 +971,15 @@
         code: "VI"
     }]
 
+    $scope.selectedQuestion = {}
+    $scope.questions = [{
+        name: "Question 1"
+    }, {
+        name: "Question 2"
+    }, {
+        name: "Question 3"
+    }, {
+        name: "Question 4"
+    }]
+
 });
