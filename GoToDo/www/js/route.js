@@ -1,6 +1,19 @@
 ﻿app.config(function ($stateProvider, $urlRouterProvider) {
     console.log('Was here!');
-    $stateProvider.state('login', {
+    $stateProvider.state('menu', {
+        url: '/menu',
+        abstract:true,
+        templateUrl: 'templates/sideMenu.html'
+    })
+       .state('menu.home', {
+           url: "/home",
+           views: {
+               'menuContent': {
+                   templateUrl: "templates/dashboard.html"
+               }
+           }
+       })
+        .state('login', {
         url: '/login',
         templateUrl: 'templates/login.html'
     })
@@ -9,13 +22,6 @@
             url: '/signUp',
             templateUrl: 'templates/signUp.html'
         })
-
-    .state('dashboard',
-        {
-            url: '/dashboard',
-            templateUrl: 'templates/dashboard.html'
-        })
-        
     .state('forgotPwd',
         {
             url: '/forgotPwd',
