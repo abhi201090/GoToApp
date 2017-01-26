@@ -9,6 +9,12 @@
             url: '/signUp',
             templateUrl: 'templates/signUp.html'
         })
+
+    .state('dashboard',
+        {
+            url: '/dashboard',
+            templateUrl: 'templates/dashboard.html'
+        })
         
     .state('forgotPwd',
         {

@@ -52,7 +52,6 @@ namespace AppService.Providers
             ClaimsIdentity oAuthIdentity = new ClaimsIdentity(context.Options.AuthenticationType);
             if (context.UserName == "Test" && context.Password == "password")
             {
-
                 oAuthIdentity.AddClaim(new Claim(ClaimTypes.Role, "user"));
                 oAuthIdentity.AddClaim(new Claim("username", "user"));
                 oAuthIdentity.AddClaim(new Claim(ClaimTypes.Name, "Test User"));

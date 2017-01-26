@@ -13,10 +13,10 @@
                 <div class="col text-center">
                     <div class="list">
                         <label class="item item-input">
-                            <input type="email" placeholder="Email Address" />
+                            <input type="email" placeholder="Email Address" ng-model="email"/>
                         </label>
                         <label class="item item-input">
-                            <input type="password" placeholder="Password" />
+                            <input type="password" placeholder="Password" ng-model="password"/>
                         </label>
                         <span class="forgot-password">                            
                                 <a ui-sref="forgotPwd" class="font-class">Forgot Password</a>                            
@@ -26,7 +26,7 @@
             </div>
             <div class="row">
                 <div class="col text-center">
-                    <input type="button" value="Login" class="button button-dark" />
+                    <input type="button" value="Login" class="button button-dark" ng-click="login()" />
                 </div>
             </div>
             <div class="row">
