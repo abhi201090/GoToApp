@@ -50,7 +50,7 @@ namespace AppService.Providers
             //context.Request.Context.Authentication.SignIn(cookiesIdentity);
 
             ClaimsIdentity oAuthIdentity = new ClaimsIdentity(context.Options.AuthenticationType);
-            if (context.UserName == "Test" && context.Password == "password")
+            if (context.UserName == "test@test.com" && context.Password == "password")
             {
                 oAuthIdentity.AddClaim(new Claim(ClaimTypes.Role, "user"));
                 oAuthIdentity.AddClaim(new Claim("username", "user"));
