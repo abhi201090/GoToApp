@@ -1,2 +1,2 @@
 <?xml version="1.0" encoding="utf-8"?>
-<merger version="3"><dataSet config="main"><source path="D:\Spring 2017\Independent Study\Go-ToDo\GoToDo\platforms\android\CordovaLib\assets"/></dataSet><dataSet config="debug"><source path="D:\Spring 2017\Independent Study\Go-ToDo\GoToDo\platforms\android\CordovaLib\src\debug\assets"/></dataSet></merger>
+<merger version="3"><dataSet config="main"><source path="C:\Users\hegdea15\Documents\GoToDo\GoToDo\platforms\android\CordovaLib\assets"/></dataSet><dataSet config="debug"><source path="C:\Users\hegdea15\Documents\GoToDo\GoToDo\platforms\android\CordovaLib\src\debug\assets"/></dataSet></merger>
