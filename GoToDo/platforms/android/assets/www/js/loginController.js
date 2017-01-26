@@ -1,11 +1,10 @@
 ﻿app.controller('loginController', function ($scope, $http,$state) {
     $scope.login = function(){
         var data = {
-            username:$scope.email,
-            password:$scope.password,
-            grant_type:'password'
-        };
-
+            username: $scope.email,
+            password: $scope.password,
+            grant_type: 'password'
+        }
         var username = $scope.email;
         var password = $scope.password
         Object.toparams = function ObjecttoParams(obj) {
@@ -21,12 +20,6 @@
             url: 'http://gotoappservice.com/token',
             headers: {
                 'Content-Type': 'application/x-www-form-urlencoded'
-            },
-            transformRequest: function(obj) {
-                var str = []
-                for(var p in obj)
-                    str.push(encodeURIComponent(p) + "=" + encodeURIComponent(obj[p]));
-                return str.join("&");
             },
             data: Object.toparams(data)
         }
