@@ -70,3 +70,11 @@
     color:white;
     
 }
+
+.add-task {
+    bottom: 10%;
+    z-index:9999;
+    position: absolute;
+    right: 40%;
+    text-align: center;
+}
