@@ -47,18 +47,17 @@
 
 .avatar{
     border-radius:50%;
-    border-color:lightgray;
+    /*border-color:lightgray;
     border-style:solid;
-    border-width:medium;
+    border-width:medium;*/
+    border:3px solid rgba(255,255,255,0.4);
     height:auto;
     width:40%;
 }
 
 .menu-items{
     padding:20px;
-    border-bottom:solid;
-    border-color:white;
-    border-width:1px;
+    border-bottom:1px solid rgba(255,255,255,0.4);
 }
 
 .menu-icon{
