@@ -26,6 +26,7 @@
         $http(req)
         .then(
             function (response) {
+                localStorage.setItem("tokenValue", response.access_token);
                 $state.go("menu.home");
             },
             function (error) {

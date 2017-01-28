@@ -27,7 +27,34 @@
             url: '/forgotPwd',
             templateUrl: 'templates/forgotPwd.html'
         });
-    $urlRouterProvider.otherwise('/login');
+
+    if (localStorage.getItem("tokenValue") == null) {
+        $urlRouterProvider.otherwise('/login');
+    }
+    else {
+
+        var req = {
+            method: 'GET',
+            url: 'http://gotoappservice.com/token',
+            headers: {
+                'Content-Type': 'application/x-www-form-urlencoded'
+            },
+            data: Object.toparams(data)
+        }
+        $http(req)
+        .then(
+            function (response) {
+                localStorage.setItem("tokenValue", response.access_token);
+                $state.go("menu.home");
+            },
+            function (error) {
+
+                var e = error;
+                console.log(error);
+            }
+            );
+
+    }
     //$urlRouterProvider.otherwise('/menu/home');
     console.log(window.location.href);
 });
