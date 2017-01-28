@@ -27,6 +27,9 @@
         },
         "cordova-sqlite-storage": {
             "PACKAGE_NAME": "io.cordova.myappe17f2c"
+        },
+        "cordova-plugin-datepicker": {
+            "PACKAGE_NAME": "io.cordova.myappe17f2c"
         }
     },
     "dependent_plugins": {}

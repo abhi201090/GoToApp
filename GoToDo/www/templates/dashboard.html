@@ -12,7 +12,7 @@
     </ion-content>
 
     <script id="new-task.html" type="text/ng-template">
-        <div class="modal">
+        <div class="modal" ng-controller="addTaskController">
             <!-- Modal header bar -->
             <ion-header-bar class="bar bar-dark">
                 <h1 class="title">New Task</h1>
@@ -39,6 +39,11 @@
                                     <input type="text" placeholder="Who can see your task?">
                                 </label>
                             </div>
+                            <ion-item class="item-icon-right">
+                                <i ng-click="datePickerShow()"
+                                   class="icon ion-ios-calendar-outline"></i>
+                                {{ model[options.key] | date : to.dateFormat }}
+                            </ion-item>
                             <label class="item item-input item-select">
                                 <div class="input-label">
                                     Set Priority
