@@ -5,7 +5,7 @@
     <ion-content class="has-header">
         <div class="row">
             <div class="col text-center">
-                <div class="list">
+                <div class="list list-inset">
                     <label class="item item-input">
                         <input type="text" placeholder="First Name" />
                     </label>
@@ -22,7 +22,7 @@
                     </div>
                     <select ng-model="country" ng-init="country=countries[0]" ng-options="country.code+' '+country.dial_code for country in countries"></select>
                 </label>
-                <div class="list">
+                <div class="list list-inset">
                     <label class="item item-input">
                         <input type="number" placeholder="Phone Number" />
                     </label>
@@ -33,13 +33,13 @@
                         <input type="password" placeholder="Re-Password" />
                     </label>
                 </div>
-                <label class="item item-input item-select">
-                    <div class="input-label">
-                        Security Question
-                    </div>
-                    <select ng-model="question" ng-init="question=questions[0]" ng-options="question.name for question in questions"></select>
-                </label>
-                <div class="list">
+                    <label class="item item-input item-select">
+                        <div class="input-label">
+                            Security Question
+                        </div>
+                        <select ng-model="question" ng-init="question=questions[0]" ng-options="question.name for question in questions"></select>
+                    </label>
+                <div class="list list-inset">
                     <label class="item item-input">
                         <input type="password" placeholder="Enter Answer" />
                     </label>

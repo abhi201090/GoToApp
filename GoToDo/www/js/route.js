@@ -28,5 +28,6 @@
             templateUrl: 'templates/forgotPwd.html'
         });
     $urlRouterProvider.otherwise('/login');
+    //$urlRouterProvider.otherwise('/menu/home');
     console.log(window.location.href);
 });
