@@ -1,4 +1,4 @@
-﻿app.controller('loginController', function ($scope, $http,$state) {
+﻿app.controller('loginController', function ($scope, $http, $state) {
     $scope.login = function(){
         var data = {
             username: $scope.email,

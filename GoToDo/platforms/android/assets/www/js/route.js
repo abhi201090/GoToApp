@@ -32,29 +32,17 @@
         $urlRouterProvider.otherwise('/login');
     }
     else {
-
-        var req = {
-            method: 'GET',
-            url: 'http://gotoappservice.com/token',
-            headers: {
-                'Content-Type': 'application/x-www-form-urlencoded'
-            },
-            data: Object.toparams(data)
+        var validity = function (tokenValidity) {
+            return tokenValidity.check();
         }
-        $http(req)
-        .then(
-            function (response) {
-                localStorage.setItem("tokenValue", response.access_token);
-                $state.go("menu.home");
-            },
-            function (error) {
-
-                var e = error;
-                console.log(error);
-            }
-            );
-
+        if (validity) {
+            $urlRouterProvider.otherwise('/menu/home');
+        }
+        else {
+            $urlRouterProvider.otherwise('/login');
+        }
     }
+
     //$urlRouterProvider.otherwise('/menu/home');
     console.log(window.location.href);
 });
