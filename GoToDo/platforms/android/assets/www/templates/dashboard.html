@@ -40,9 +40,9 @@
                                 </label>
                             </div>
                             <ion-item class="item-icon-right">
-                                <i ng-click="datePickerShow()"
+                                <i ng-click="showDatePicker()"
                                    class="icon ion-ios-calendar-outline"></i>
-                                {{ model[options.key] | date : to.dateFormat }}
+                                {{ selectedDate }}
                             </ion-item>
                             <label class="item item-input item-select">
                                 <div class="input-label">
