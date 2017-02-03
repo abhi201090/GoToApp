@@ -1,0 +1,170 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="DB8807_gotoappdbModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Priority_Types">
+    <Key>
+      <PropertyRef Name="Priority_Type_ID" />
+    </Key>
+    <Property Name="Priority_Type_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Type_Desc" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="Tasks" Relationship="Self.FK_Tasks_Priority_Types" FromRole="Priority_Types" ToRole="Tasks" />
+  </EntityType>
+  <EntityType Name="Task_Type">
+    <Key>
+      <PropertyRef Name="Task_Type1" />
+    </Key>
+    <Property Name="Task_Type1" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Task_Description" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="Tasks" Relationship="Self.FK_Tasks_Task_Type" FromRole="Task_Type" ToRole="Tasks" />
+  </EntityType>
+  <EntityType Name="Task">
+    <Key>
+      <PropertyRef Name="Task_ID" />
+    </Key>
+    <Property Name="Task_ID" Type="Int32" Nullable="false" />
+    <Property Name="Task_Title" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Task_Desc" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Reminder" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="Location" Type="Geography" />
+    <Property Name="Owner_ID" Type="Int32" Nullable="false" />
+    <Property Name="Assigned_To" Type="Int32" />
+    <Property Name="Priority_ID" Type="Int32" />
+    <Property Name="Task_Type" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Priority_Types" Relationship="Self.FK_Tasks_Priority_Types" FromRole="Tasks" ToRole="Priority_Types" />
+    <NavigationProperty Name="Task_Type1" Relationship="Self.FK_Tasks_Task_Type" FromRole="Tasks" ToRole="Task_Type" />
+    <NavigationProperty Name="User" Relationship="Self.FK_Tasks_Users" FromRole="Tasks" ToRole="Users" />
+    <NavigationProperty Name="User1" Relationship="Self.FK_Tasks_Users1" FromRole="Tasks" ToRole="Users" />
+    <NavigationProperty Name="Users" Relationship="Self.Task_Request" FromRole="Tasks" ToRole="Users" />
+  </EntityType>
+  <EntityType Name="User_Types">
+    <Key>
+      <PropertyRef Name="Type_ID" />
+    </Key>
+    <Property Name="Type_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Type_Desc" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="User" Relationship="Self.FK_Users_User_Types" FromRole="User_Types" ToRole="Users" />
+  </EntityType>
+  <EntityType Name="User">
+    <Key>
+      <PropertyRef Name="User_ID" />
+    </Key>
+    <Property Name="User_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="First_Name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Last_Name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Email" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Mobile_No" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Password" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Is_Active" Type="Boolean" Nullable="false" />
+    <Property Name="Device_ID" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="User_Type" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Tasks" Relationship="Self.FK_Tasks_Users" FromRole="Users" ToRole="Tasks" />
+    <NavigationProperty Name="Tasks1" Relationship="Self.FK_Tasks_Users1" FromRole="Users" ToRole="Tasks" />
+    <NavigationProperty Name="User_Types" Relationship="Self.FK_Users_User_Types" FromRole="Users" ToRole="User_Types" />
+    <NavigationProperty Name="Tasks2" Relationship="Self.Task_Request" FromRole="Users" ToRole="Tasks" />
+  </EntityType>
+  <EntityType Name="sysdiagram">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="principal_id" Type="Int32" Nullable="false" />
+    <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="version" Type="Int32" />
+    <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+  </EntityType>
+  <Association Name="FK_Tasks_Priority_Types">
+    <End Role="Priority_Types" Type="Self.Priority_Types" Multiplicity="0..1" />
+    <End Role="Tasks" Type="Self.Task" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Priority_Types">
+        <PropertyRef Name="Priority_Type_ID" />
+      </Principal>
+      <Dependent Role="Tasks">
+        <PropertyRef Name="Priority_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Tasks_Task_Type">
+    <End Role="Task_Type" Type="Self.Task_Type" Multiplicity="1" />
+    <End Role="Tasks" Type="Self.Task" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Task_Type">
+        <PropertyRef Name="Task_Type1" />
+      </Principal>
+      <Dependent Role="Tasks">
+        <PropertyRef Name="Task_Type" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Tasks_Users">
+    <End Role="Users" Type="Self.User" Multiplicity="1" />
+    <End Role="Tasks" Type="Self.Task" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="User_ID" />
+      </Principal>
+      <Dependent Role="Tasks">
+        <PropertyRef Name="Owner_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Tasks_Users1">
+    <End Role="Users" Type="Self.User" Multiplicity="0..1" />
+    <End Role="Tasks" Type="Self.Task" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="User_ID" />
+      </Principal>
+      <Dependent Role="Tasks">
+        <PropertyRef Name="Assigned_To" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Users_User_Types">
+    <End Role="User_Types" Type="Self.User_Types" Multiplicity="1" />
+    <End Role="Users" Type="Self.User" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="User_Types">
+        <PropertyRef Name="Type_ID" />
+      </Principal>
+      <Dependent Role="Users">
+        <PropertyRef Name="User_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="Task_Request">
+    <End Role="Tasks" Type="Self.Task" Multiplicity="*" />
+    <End Role="Users" Type="Self.User" Multiplicity="*" />
+  </Association>
+  <EntityContainer Name="DB8807_gotoappdbEntities1" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Priority_Types" EntityType="Self.Priority_Types" />
+    <EntitySet Name="Task_Type" EntityType="Self.Task_Type" />
+    <EntitySet Name="Tasks" EntityType="Self.Task" />
+    <EntitySet Name="User_Types" EntityType="Self.User_Types" />
+    <EntitySet Name="Users" EntityType="Self.User" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagram" />
+    <AssociationSet Name="FK_Tasks_Priority_Types" Association="Self.FK_Tasks_Priority_Types">
+      <End Role="Priority_Types" EntitySet="Priority_Types" />
+      <End Role="Tasks" EntitySet="Tasks" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Tasks_Task_Type" Association="Self.FK_Tasks_Task_Type">
+      <End Role="Task_Type" EntitySet="Task_Type" />
+      <End Role="Tasks" EntitySet="Tasks" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Tasks_Users" Association="Self.FK_Tasks_Users">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="Tasks" EntitySet="Tasks" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Tasks_Users1" Association="Self.FK_Tasks_Users1">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="Tasks" EntitySet="Tasks" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Users_User_Types" Association="Self.FK_Users_User_Types">
+      <End Role="User_Types" EntitySet="User_Types" />
+      <End Role="Users" EntitySet="Users" />
+    </AssociationSet>
+    <AssociationSet Name="Task_Request" Association="Self.Task_Request">
+      <End Role="Tasks" EntitySet="Tasks" />
+      <End Role="Users" EntitySet="Users" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

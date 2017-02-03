@@ -1,6 +1,7 @@
-﻿app.controller('signUpController', function ($scope) {
+﻿app.controller('signUpController', function ($scope, $http) {
 
-    $scope.selectedCountry = {}
+
+    $scope.selectedCountry ={};
     $scope.countries = [{
         name: "United States",
         dial_code: "+1",
@@ -969,17 +970,35 @@
         name: "Virgin Islands, U.S.",
         dial_code: "+1 340",
         code: "VI"
-    }]
+    }];
 
-    $scope.selectedQuestion = {}
-    $scope.questions = [{
-        name: "Question 1"
-    }, {
-        name: "Question 2"
-    }, {
-        name: "Question 3"
-    }, {
-        name: "Question 4"
-    }]
+    $http.get('http://gotoappservice.com/api/SignUp/GetQuestions').then(function (response) {
+        $scope.questions = response.data;
+        $scope.question = $scope.questions[0];
+    }, function (error) {
+    });
 
+    $scope.signUp = function () {
+        var data = {
+            FirstName: $scope.firstName,
+            LastName: $scope.lastName,
+            Email: $scope.email,
+            PhNo: $scope.country.dial_code + ' ' + $scope.phNo,
+            Password: $scope.password,
+            DeviceID: device.uuid,
+            IsActive: 1,
+            UserType: 2,
+            Question: $scope.question.Id,
+            Anwser: $scope.answer
+        };
+
+        $http.post('http://gotoappservice.com/api/SignUp/Register', data)
+        .then(function (response) {
+            var p = response;
+
+        }, function (error) {
+            var p = error;
+        });
+        
+    }
 });

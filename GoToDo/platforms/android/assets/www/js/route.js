@@ -28,21 +28,21 @@
             templateUrl: 'templates/forgotPwd.html'
         });
 
-    if (localStorage.getItem("tokenValue") == null) {
-        $urlRouterProvider.otherwise('/login');
-    }
-    else {
-        var validity = function (tokenValidity) {
-            return tokenValidity.check();
-        }
-        if (validity) {
-            $urlRouterProvider.otherwise('/menu/home');
-        }
-        else {
-            $urlRouterProvider.otherwise('/login');
-        }
-    }
+    //if (localStorage.getItem("tokenValue") === null) {
+    //    $urlRouterProvider.otherwise('/login');
+    //}
+    //else {
+    //    var validity = function (tokenValidity) {
+    //        return tokenValidity.check();
+    //    }
+    //    if (validity) {
+    //        $urlRouterProvider.otherwise('/menu/home');
+    //    }
+    //    else {
+    //        $urlRouterProvider.otherwise('/login');
+    //    }
+    //}
 
-    //$urlRouterProvider.otherwise('/menu/home');
+    $urlRouterProvider.otherwise('/login');
     console.log(window.location.href);
 });

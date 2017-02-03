@@ -1,6 +1,6 @@
 /* Empty. Add your own CSS if you like */
 .center-align{
-    margin:auto
+    margin:auto;
     text-align:center;
 }
 
@@ -77,4 +77,15 @@
     position: absolute;
     right: 40%;
     text-align: center;
+}
+
+.validation-errors p{
+    font-size:12px;
+    text-align:left;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0; 
 }

@@ -1,51 +1,68 @@
-﻿<ion-view ng-controller="signUpController">
-    <ion-header-bar class="bar bar-dark">
-        <h1 class="title">Sign Up</h1>
-    </ion-header-bar>
-    <ion-content class="has-header">
-        <div class="row">
-            <div class="col text-center">
-                <div class="list list-inset">
-                    <label class="item item-input">
-                        <input type="text" placeholder="First Name" />
-                    </label>
-                    <label class="item item-input">
-                        <input type="text" placeholder="Last Name" />
-                    </label>
-                    <label class="item item-input">
-                        <input type="email" placeholder="Email Address" />
-                    </label>
-                </div>
-                <label class="item item-input item-select">
-                    <div class="input-label">
-                        Country
+﻿<ion-view title="Sign Up">
+    <ion-nav-bar class="bar bar-dark">
+        <ion-nav-back-button class="button-clear">
+            <i class="ion-arrow-left-c"></i>
+        </ion-nav-back-button>
+    </ion-nav-bar>
+    <ion-content ng-controller="signUpController">
+        <form name="signUpForm" novalidate>
+            <div class="row">
+                <div class="col text-center">
+                    <div class="list list-inset">
+                        <label class="item item-input">
+                            <input type="text" placeholder="First Name" ng-model="firstName" name="firstName" required/>
+                        </label>
+                        <label class="item item-input">
+                            <input type="text" placeholder="Last Name" ng-model="lastName" name="lastName"/>
+                        </label>
+                        <label class="item item-input">
+                            <input type="email" placeholder="Email Address" ng-model="email" name="email" required/>
+                        </label>
                     </div>
-                    <select ng-model="country" ng-init="country=countries[0]" ng-options="country.code+' '+country.dial_code for country in countries"></select>
-                </label>
-                <div class="list list-inset">
-                    <label class="item item-input">
-                        <input type="number" placeholder="Phone Number" />
+                    <label class="item item-input item-select">
+                        <div class="input-label">
+                            Country
+                        </div>
+                        <select ng-model="country" name="country" ng-init="country=countries[0]" ng-options="country.code+' '+country.dial_code for country in countries" required></select>
                     </label>
-                    <label class="item item-input">
-                        <input type="password" placeholder="Password" />
-                    </label>
-                    <label class="item item-input">
-                        <input type="password" placeholder="Re-Password" />
-                    </label>
-                </div>
+                    <div class="list list-inset">
+                        <label class="item item-input">
+                            <input type="number" placeholder="Phone Number" name="phNo" ng-model="phNo" required ng-minlength="10" ng-maxlength="10"/>
+                        </label>
+                        <label class="item item-input">
+                            <input type="password" placeholder="Password" name="password" ng-model="password" ng-minlength="8" ng-maxlength="16" required/>
+                        </label>
+                        <label class="item item-input">
+                            <input type="password" placeholder="Re-Password" name="rePassword" ng-model="rePassword" ng-minlength="8" ng-maxlength="16" required/>
+                        </label>
+                    </div>
                     <label class="item item-input item-select">
                         <div class="input-label">
                             Security Question
                         </div>
-                        <select ng-model="question" ng-init="question=questions[0]" ng-options="question.name for question in questions"></select>
+                        <select ng-model="question" name="question" ng-init="question=questions[0]" ng-options="question.Question for question in questions" required></select>
                     </label>
-                <div class="list list-inset">
-                    <label class="item item-input">
-                        <input type="password" placeholder="Enter Answer" />
-                    </label>
+                    <div class="list list-inset">
+                        <label class="item item-input">
+                            <input type="text" name="answer" placeholder="Enter Answer" ng-model="answer" required/>
+                        </label>
+                    </div>
+                    <div class="validation-errors list list-inset">
+                        <p ng-show="signUpForm.firstName.$error.required">* First Name is required</p>
+                        <p ng-show="signUpForm.email.$error.required">* Email is required</p>
+                        <p ng-show="signUpForm.email.$error.email">* Invalid email address</p>
+                        <p ng-show="signUpForm.country.$error.required">* Country code is required</p>
+                        <p ng-show="signUpForm.phNo.$error.required">* Mobile number is required</p>
+                        <p ng-show="signUpForm.phNo.$error.minlength || signUpForm.phNo.$error.maxlength">* Mobile number is required</p>
+                        <p ng-show="signUpForm.password.$error.required">* Password is required</p>
+                        <p ng-show="signUpForm.password.$error.minlength || signUpForm.password.$error.maxlength">* Password must be between 8 to 16 characters</p>
+                        <p ng-show="password !== rePassword">* Passwords do not match</p>
+                        <p ng-show="signUpForm.question.$error.required">* Security question is required</p>
+                        <p ng-show="signUpForm.answer.$error.required">* Answer to the security question is required</p>
+                    </div>
+                    <input type="button" class="button button-dark" ng-disabled="signUpForm.$invalid" value="Submit" ng-click="signUp()" />
                 </div>
-                <input type="button" class="button button-dark" value="Submit" />
             </div>
-        </div>
+        </form>
     </ion-content>
 </ion-view>

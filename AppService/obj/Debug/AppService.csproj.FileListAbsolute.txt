@@ -1,180 +1,89 @@
-D:\Spring 2017\Independent Study\Go-ToDo\AppService\bin\ApplicationInsights.config
-D:\Spring 2017\Independent Study\Go-ToDo\AppService\bin\roslyn\csc.exe
-D:\Spring 2017\Independent Study\Go-ToDo\AppService\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
-D:\Spring 2017\Independent Study\Go-ToDo\AppService\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
-D:\Spring 2017\Independent Study\Go-ToDo\AppService\bin\roslyn\Microsoft.CodeAnalysis.dll
-D:\Spring 2017\Independent Study\Go-ToDo\AppService\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
-D:\Spring 2017\Independent Study\Go-ToDo\AppService\bin\roslyn\Microsoft.CSharp.Core.targets
-D:\Spring 2017\Independent Study\Go-ToDo\AppService\bin\roslyn\Microsoft.VisualBasic.Core.targets
-D:\Spring 2017\Independent Study\Go-ToDo\AppService\bin\roslyn\System.Collections.Immutable.dll
-D:\Spring 2017\Independent Study\Go-ToDo\AppService\bin\roslyn\System.Reflection.Metadata.dll
-D:\Spring 2017\Independent Study\Go-ToDo\AppService\bin\roslyn\vbc.exe
-D:\Spring 2017\Independent Study\Go-ToDo\AppService\bin\roslyn\VBCSCompiler.exe
-D:\Spring 2017\Independent Study\Go-ToDo\AppService\bin\roslyn\VBCSCompiler.exe.config
-D:\Spring 2017\Independent Study\Go-ToDo\AppService\bin\AppService.dll.config
-D:\Spring 2017\Independent Study\Go-ToDo\AppService\bin\AppService.dll
-D:\Spring 2017\Independent Study\Go-ToDo\AppService\bin\AppService.pdb
-D:\Spring 2017\Independent Study\Go-ToDo\AppService\bin\Antlr3.Runtime.dll
-D:\Spring 2017\Independent Study\Go-ToDo\AppService\bin\EntityFramework.dll
-D:\Spring 2017\Independent Study\Go-ToDo\AppService\bin\EntityFramework.SqlServer.dll
-D:\Spring 2017\Independent Study\Go-ToDo\AppService\bin\Microsoft.AI.Agent.Intercept.dll
-D:\Spring 2017\Independent Study\Go-ToDo\AppService\bin\Microsoft.AI.DependencyCollector.dll
-D:\Spring 2017\Independent Study\Go-ToDo\AppService\bin\Microsoft.AI.PerfCounterCollector.dll
-D:\Spring 2017\Independent Study\Go-ToDo\AppService\bin\Microsoft.AI.ServerTelemetryChannel.dll
-D:\Spring 2017\Independent Study\Go-ToDo\AppService\bin\Microsoft.AI.Web.dll
-D:\Spring 2017\Independent Study\Go-ToDo\AppService\bin\Microsoft.AI.WindowsServer.dll
-D:\Spring 2017\Independent Study\Go-ToDo\AppService\bin\Microsoft.ApplicationInsights.dll
-D:\Spring 2017\Independent Study\Go-ToDo\AppService\bin\Microsoft.AspNet.Identity.Core.dll
-D:\Spring 2017\Independent Study\Go-ToDo\AppService\bin\Microsoft.AspNet.Identity.EntityFramework.dll
-D:\Spring 2017\Independent Study\Go-ToDo\AppService\bin\Microsoft.AspNet.Identity.Owin.dll
-D:\Spring 2017\Independent Study\Go-ToDo\AppService\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
-D:\Spring 2017\Independent Study\Go-ToDo\AppService\bin\Microsoft.Owin.dll
-D:\Spring 2017\Independent Study\Go-ToDo\AppService\bin\Microsoft.Owin.Host.SystemWeb.dll
-D:\Spring 2017\Independent Study\Go-ToDo\AppService\bin\Microsoft.Owin.Security.Cookies.dll
-D:\Spring 2017\Independent Study\Go-ToDo\AppService\bin\Microsoft.Owin.Security.dll
-D:\Spring 2017\Independent Study\Go-ToDo\AppService\bin\Microsoft.Owin.Security.Facebook.dll
-D:\Spring 2017\Independent Study\Go-ToDo\AppService\bin\Microsoft.Owin.Security.Google.dll
-D:\Spring 2017\Independent Study\Go-ToDo\AppService\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
-D:\Spring 2017\Independent Study\Go-ToDo\AppService\bin\Microsoft.Owin.Security.OAuth.dll
-D:\Spring 2017\Independent Study\Go-ToDo\AppService\bin\Microsoft.Owin.Security.Twitter.dll
-D:\Spring 2017\Independent Study\Go-ToDo\AppService\bin\Microsoft.Web.Infrastructure.dll
-D:\Spring 2017\Independent Study\Go-ToDo\AppService\bin\Newtonsoft.Json.dll
-D:\Spring 2017\Independent Study\Go-ToDo\AppService\bin\Owin.dll
-D:\Spring 2017\Independent Study\Go-ToDo\AppService\bin\System.Net.Http.Formatting.dll
-D:\Spring 2017\Independent Study\Go-ToDo\AppService\bin\System.Web.Helpers.dll
-D:\Spring 2017\Independent Study\Go-ToDo\AppService\bin\System.Web.Http.dll
-D:\Spring 2017\Independent Study\Go-ToDo\AppService\bin\System.Web.Http.Owin.dll
-D:\Spring 2017\Independent Study\Go-ToDo\AppService\bin\System.Web.Http.WebHost.dll
-D:\Spring 2017\Independent Study\Go-ToDo\AppService\bin\System.Web.Mvc.dll
-D:\Spring 2017\Independent Study\Go-ToDo\AppService\bin\System.Web.Optimization.dll
-D:\Spring 2017\Independent Study\Go-ToDo\AppService\bin\System.Web.Razor.dll
-D:\Spring 2017\Independent Study\Go-ToDo\AppService\bin\System.Web.WebPages.Deployment.dll
-D:\Spring 2017\Independent Study\Go-ToDo\AppService\bin\System.Web.WebPages.dll
-D:\Spring 2017\Independent Study\Go-ToDo\AppService\bin\System.Web.WebPages.Razor.dll
-D:\Spring 2017\Independent Study\Go-ToDo\AppService\bin\WebGrease.dll
-D:\Spring 2017\Independent Study\Go-ToDo\AppService\bin\Microsoft.AI.DependencyCollector.xml
-D:\Spring 2017\Independent Study\Go-ToDo\AppService\bin\Microsoft.AI.ServerTelemetryChannel.xml
-D:\Spring 2017\Independent Study\Go-ToDo\AppService\bin\Microsoft.AI.Web.xml
-D:\Spring 2017\Independent Study\Go-ToDo\AppService\bin\Microsoft.AI.WindowsServer.xml
-D:\Spring 2017\Independent Study\Go-ToDo\AppService\bin\Microsoft.ApplicationInsights.xml
-D:\Spring 2017\Independent Study\Go-ToDo\AppService\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-D:\Spring 2017\Independent Study\Go-ToDo\AppService\bin\Newtonsoft.Json.xml
-D:\Spring 2017\Independent Study\Go-ToDo\AppService\bin\System.Net.Http.Formatting.xml
-D:\Spring 2017\Independent Study\Go-ToDo\AppService\bin\System.Web.Helpers.xml
-D:\Spring 2017\Independent Study\Go-ToDo\AppService\bin\System.Web.Http.xml
-D:\Spring 2017\Independent Study\Go-ToDo\AppService\bin\System.Web.Http.WebHost.xml
-D:\Spring 2017\Independent Study\Go-ToDo\AppService\bin\System.Web.Mvc.xml
-D:\Spring 2017\Independent Study\Go-ToDo\AppService\bin\System.Web.Optimization.xml
-D:\Spring 2017\Independent Study\Go-ToDo\AppService\bin\System.Web.Razor.xml
-D:\Spring 2017\Independent Study\Go-ToDo\AppService\bin\System.Web.WebPages.xml
-D:\Spring 2017\Independent Study\Go-ToDo\AppService\bin\System.Web.WebPages.Deployment.xml
-D:\Spring 2017\Independent Study\Go-ToDo\AppService\bin\System.Web.WebPages.Razor.xml
-D:\Spring 2017\Independent Study\Go-ToDo\AppService\bin\Antlr3.Runtime.pdb
-D:\Spring 2017\Independent Study\Go-ToDo\AppService\bin\EntityFramework.xml
-D:\Spring 2017\Independent Study\Go-ToDo\AppService\bin\EntityFramework.SqlServer.xml
-D:\Spring 2017\Independent Study\Go-ToDo\AppService\bin\Microsoft.AspNet.Identity.Core.xml
-D:\Spring 2017\Independent Study\Go-ToDo\AppService\bin\Microsoft.AspNet.Identity.Owin.xml
-D:\Spring 2017\Independent Study\Go-ToDo\AppService\bin\Microsoft.AspNet.Identity.EntityFramework.xml
-D:\Spring 2017\Independent Study\Go-ToDo\AppService\bin\Microsoft.Owin.xml
-D:\Spring 2017\Independent Study\Go-ToDo\AppService\bin\Microsoft.Owin.Host.SystemWeb.xml
-D:\Spring 2017\Independent Study\Go-ToDo\AppService\bin\Microsoft.Owin.Security.xml
-D:\Spring 2017\Independent Study\Go-ToDo\AppService\bin\Microsoft.Owin.Security.Facebook.xml
-D:\Spring 2017\Independent Study\Go-ToDo\AppService\bin\Microsoft.Owin.Security.Cookies.xml
-D:\Spring 2017\Independent Study\Go-ToDo\AppService\bin\Microsoft.Owin.Security.OAuth.xml
-D:\Spring 2017\Independent Study\Go-ToDo\AppService\bin\Microsoft.Owin.Security.Google.xml
-D:\Spring 2017\Independent Study\Go-ToDo\AppService\bin\Microsoft.Owin.Security.Twitter.xml
-D:\Spring 2017\Independent Study\Go-ToDo\AppService\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
-D:\Spring 2017\Independent Study\Go-ToDo\AppService\bin\System.Web.Http.Owin.xml
-D:\Spring 2017\Independent Study\Go-ToDo\AppService\obj\Debug\AppService.csprojResolveAssemblyReference.cache
-D:\Spring 2017\Independent Study\Go-ToDo\AppService\obj\Debug\AppService.dll
-D:\Spring 2017\Independent Study\Go-ToDo\AppService\obj\Debug\AppService.pdb
-C:\Users\hegdea15\Documents\GoToDo\AppService\obj\Debug\AppService.csprojResolveAssemblyReference.cache
-C:\Users\hegdea15\Documents\GoToDo\AppService\obj\Debug\AppService.dll
-C:\Users\hegdea15\Documents\GoToDo\AppService\obj\Debug\AppService.pdb
-C:\Users\hegdea15\Documents\GoToDo\AppService\bin\ApplicationInsights.config
-C:\Users\hegdea15\Documents\GoToDo\AppService\bin\roslyn\csc.exe
-C:\Users\hegdea15\Documents\GoToDo\AppService\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
-C:\Users\hegdea15\Documents\GoToDo\AppService\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
-C:\Users\hegdea15\Documents\GoToDo\AppService\bin\roslyn\Microsoft.CodeAnalysis.dll
-C:\Users\hegdea15\Documents\GoToDo\AppService\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
-C:\Users\hegdea15\Documents\GoToDo\AppService\bin\roslyn\Microsoft.CSharp.Core.targets
-C:\Users\hegdea15\Documents\GoToDo\AppService\bin\roslyn\Microsoft.VisualBasic.Core.targets
-C:\Users\hegdea15\Documents\GoToDo\AppService\bin\roslyn\System.Collections.Immutable.dll
-C:\Users\hegdea15\Documents\GoToDo\AppService\bin\roslyn\System.Reflection.Metadata.dll
-C:\Users\hegdea15\Documents\GoToDo\AppService\bin\roslyn\vbc.exe
-C:\Users\hegdea15\Documents\GoToDo\AppService\bin\roslyn\VBCSCompiler.exe
-C:\Users\hegdea15\Documents\GoToDo\AppService\bin\roslyn\VBCSCompiler.exe.config
-C:\Users\hegdea15\Documents\GoToDo\AppService\bin\AppService.dll.config
-C:\Users\hegdea15\Documents\GoToDo\AppService\bin\AppService.dll
-C:\Users\hegdea15\Documents\GoToDo\AppService\bin\AppService.pdb
-C:\Users\hegdea15\Documents\GoToDo\AppService\bin\Antlr3.Runtime.dll
-C:\Users\hegdea15\Documents\GoToDo\AppService\bin\EntityFramework.dll
-C:\Users\hegdea15\Documents\GoToDo\AppService\bin\EntityFramework.SqlServer.dll
-C:\Users\hegdea15\Documents\GoToDo\AppService\bin\Microsoft.AI.Agent.Intercept.dll
-C:\Users\hegdea15\Documents\GoToDo\AppService\bin\Microsoft.AI.DependencyCollector.dll
-C:\Users\hegdea15\Documents\GoToDo\AppService\bin\Microsoft.AI.PerfCounterCollector.dll
-C:\Users\hegdea15\Documents\GoToDo\AppService\bin\Microsoft.AI.ServerTelemetryChannel.dll
-C:\Users\hegdea15\Documents\GoToDo\AppService\bin\Microsoft.AI.Web.dll
-C:\Users\hegdea15\Documents\GoToDo\AppService\bin\Microsoft.AI.WindowsServer.dll
-C:\Users\hegdea15\Documents\GoToDo\AppService\bin\Microsoft.ApplicationInsights.dll
-C:\Users\hegdea15\Documents\GoToDo\AppService\bin\Microsoft.AspNet.Identity.Core.dll
-C:\Users\hegdea15\Documents\GoToDo\AppService\bin\Microsoft.AspNet.Identity.EntityFramework.dll
-C:\Users\hegdea15\Documents\GoToDo\AppService\bin\Microsoft.AspNet.Identity.Owin.dll
-C:\Users\hegdea15\Documents\GoToDo\AppService\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
-C:\Users\hegdea15\Documents\GoToDo\AppService\bin\Microsoft.Owin.dll
-C:\Users\hegdea15\Documents\GoToDo\AppService\bin\Microsoft.Owin.Host.SystemWeb.dll
-C:\Users\hegdea15\Documents\GoToDo\AppService\bin\Microsoft.Owin.Security.Cookies.dll
-C:\Users\hegdea15\Documents\GoToDo\AppService\bin\Microsoft.Owin.Security.dll
-C:\Users\hegdea15\Documents\GoToDo\AppService\bin\Microsoft.Owin.Security.Facebook.dll
-C:\Users\hegdea15\Documents\GoToDo\AppService\bin\Microsoft.Owin.Security.Google.dll
-C:\Users\hegdea15\Documents\GoToDo\AppService\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
-C:\Users\hegdea15\Documents\GoToDo\AppService\bin\Microsoft.Owin.Security.OAuth.dll
-C:\Users\hegdea15\Documents\GoToDo\AppService\bin\Microsoft.Owin.Security.Twitter.dll
-C:\Users\hegdea15\Documents\GoToDo\AppService\bin\Microsoft.Web.Infrastructure.dll
-C:\Users\hegdea15\Documents\GoToDo\AppService\bin\Newtonsoft.Json.dll
-C:\Users\hegdea15\Documents\GoToDo\AppService\bin\Owin.dll
-C:\Users\hegdea15\Documents\GoToDo\AppService\bin\System.Net.Http.Formatting.dll
-C:\Users\hegdea15\Documents\GoToDo\AppService\bin\System.Web.Helpers.dll
-C:\Users\hegdea15\Documents\GoToDo\AppService\bin\System.Web.Http.dll
-C:\Users\hegdea15\Documents\GoToDo\AppService\bin\System.Web.Http.Owin.dll
-C:\Users\hegdea15\Documents\GoToDo\AppService\bin\System.Web.Http.WebHost.dll
-C:\Users\hegdea15\Documents\GoToDo\AppService\bin\System.Web.Mvc.dll
-C:\Users\hegdea15\Documents\GoToDo\AppService\bin\System.Web.Optimization.dll
-C:\Users\hegdea15\Documents\GoToDo\AppService\bin\System.Web.Razor.dll
-C:\Users\hegdea15\Documents\GoToDo\AppService\bin\System.Web.WebPages.Deployment.dll
-C:\Users\hegdea15\Documents\GoToDo\AppService\bin\System.Web.WebPages.dll
-C:\Users\hegdea15\Documents\GoToDo\AppService\bin\System.Web.WebPages.Razor.dll
-C:\Users\hegdea15\Documents\GoToDo\AppService\bin\WebGrease.dll
-C:\Users\hegdea15\Documents\GoToDo\AppService\bin\Microsoft.AI.DependencyCollector.xml
-C:\Users\hegdea15\Documents\GoToDo\AppService\bin\Microsoft.AI.ServerTelemetryChannel.xml
-C:\Users\hegdea15\Documents\GoToDo\AppService\bin\Microsoft.AI.Web.xml
-C:\Users\hegdea15\Documents\GoToDo\AppService\bin\Microsoft.AI.WindowsServer.xml
-C:\Users\hegdea15\Documents\GoToDo\AppService\bin\Microsoft.ApplicationInsights.xml
-C:\Users\hegdea15\Documents\GoToDo\AppService\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-C:\Users\hegdea15\Documents\GoToDo\AppService\bin\Newtonsoft.Json.xml
-C:\Users\hegdea15\Documents\GoToDo\AppService\bin\System.Net.Http.Formatting.xml
-C:\Users\hegdea15\Documents\GoToDo\AppService\bin\System.Web.Helpers.xml
-C:\Users\hegdea15\Documents\GoToDo\AppService\bin\System.Web.Http.xml
-C:\Users\hegdea15\Documents\GoToDo\AppService\bin\System.Web.Http.WebHost.xml
-C:\Users\hegdea15\Documents\GoToDo\AppService\bin\System.Web.Mvc.xml
-C:\Users\hegdea15\Documents\GoToDo\AppService\bin\System.Web.Optimization.xml
-C:\Users\hegdea15\Documents\GoToDo\AppService\bin\System.Web.Razor.xml
-C:\Users\hegdea15\Documents\GoToDo\AppService\bin\System.Web.WebPages.xml
-C:\Users\hegdea15\Documents\GoToDo\AppService\bin\System.Web.WebPages.Deployment.xml
-C:\Users\hegdea15\Documents\GoToDo\AppService\bin\System.Web.WebPages.Razor.xml
-C:\Users\hegdea15\Documents\GoToDo\AppService\bin\Antlr3.Runtime.pdb
-C:\Users\hegdea15\Documents\GoToDo\AppService\bin\EntityFramework.xml
-C:\Users\hegdea15\Documents\GoToDo\AppService\bin\EntityFramework.SqlServer.xml
-C:\Users\hegdea15\Documents\GoToDo\AppService\bin\Microsoft.AspNet.Identity.Core.xml
-C:\Users\hegdea15\Documents\GoToDo\AppService\bin\Microsoft.AspNet.Identity.Owin.xml
-C:\Users\hegdea15\Documents\GoToDo\AppService\bin\Microsoft.AspNet.Identity.EntityFramework.xml
-C:\Users\hegdea15\Documents\GoToDo\AppService\bin\Microsoft.Owin.xml
-C:\Users\hegdea15\Documents\GoToDo\AppService\bin\Microsoft.Owin.Host.SystemWeb.xml
-C:\Users\hegdea15\Documents\GoToDo\AppService\bin\Microsoft.Owin.Security.xml
-C:\Users\hegdea15\Documents\GoToDo\AppService\bin\Microsoft.Owin.Security.Facebook.xml
-C:\Users\hegdea15\Documents\GoToDo\AppService\bin\Microsoft.Owin.Security.Cookies.xml
-C:\Users\hegdea15\Documents\GoToDo\AppService\bin\Microsoft.Owin.Security.OAuth.xml
-C:\Users\hegdea15\Documents\GoToDo\AppService\bin\Microsoft.Owin.Security.Google.xml
-C:\Users\hegdea15\Documents\GoToDo\AppService\bin\Microsoft.Owin.Security.Twitter.xml
-C:\Users\hegdea15\Documents\GoToDo\AppService\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
-C:\Users\hegdea15\Documents\GoToDo\AppService\bin\System.Web.Http.Owin.xml
+C:\Users\hegdea15\Documents\NewGotoApp\GoToApp\AppService\bin\ApplicationInsights.config
+C:\Users\hegdea15\Documents\NewGotoApp\GoToApp\AppService\bin\roslyn\csc.exe
+C:\Users\hegdea15\Documents\NewGotoApp\GoToApp\AppService\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\hegdea15\Documents\NewGotoApp\GoToApp\AppService\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\hegdea15\Documents\NewGotoApp\GoToApp\AppService\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\hegdea15\Documents\NewGotoApp\GoToApp\AppService\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\hegdea15\Documents\NewGotoApp\GoToApp\AppService\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\hegdea15\Documents\NewGotoApp\GoToApp\AppService\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\hegdea15\Documents\NewGotoApp\GoToApp\AppService\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\hegdea15\Documents\NewGotoApp\GoToApp\AppService\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\hegdea15\Documents\NewGotoApp\GoToApp\AppService\bin\roslyn\vbc.exe
+C:\Users\hegdea15\Documents\NewGotoApp\GoToApp\AppService\bin\roslyn\VBCSCompiler.exe
+C:\Users\hegdea15\Documents\NewGotoApp\GoToApp\AppService\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\hegdea15\Documents\NewGotoApp\GoToApp\AppService\bin\AppService.dll.config
+C:\Users\hegdea15\Documents\NewGotoApp\GoToApp\AppService\bin\AppService.dll
+C:\Users\hegdea15\Documents\NewGotoApp\GoToApp\AppService\bin\AppService.pdb
+C:\Users\hegdea15\Documents\NewGotoApp\GoToApp\AppService\bin\Antlr3.Runtime.dll
+C:\Users\hegdea15\Documents\NewGotoApp\GoToApp\AppService\bin\EntityFramework.dll
+C:\Users\hegdea15\Documents\NewGotoApp\GoToApp\AppService\bin\EntityFramework.SqlServer.dll
+C:\Users\hegdea15\Documents\NewGotoApp\GoToApp\AppService\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\hegdea15\Documents\NewGotoApp\GoToApp\AppService\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\hegdea15\Documents\NewGotoApp\GoToApp\AppService\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\hegdea15\Documents\NewGotoApp\GoToApp\AppService\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\hegdea15\Documents\NewGotoApp\GoToApp\AppService\bin\Microsoft.AI.Web.dll
+C:\Users\hegdea15\Documents\NewGotoApp\GoToApp\AppService\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\hegdea15\Documents\NewGotoApp\GoToApp\AppService\bin\Microsoft.ApplicationInsights.dll
+C:\Users\hegdea15\Documents\NewGotoApp\GoToApp\AppService\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\hegdea15\Documents\NewGotoApp\GoToApp\AppService\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\hegdea15\Documents\NewGotoApp\GoToApp\AppService\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\hegdea15\Documents\NewGotoApp\GoToApp\AppService\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\hegdea15\Documents\NewGotoApp\GoToApp\AppService\bin\Microsoft.Owin.dll
+C:\Users\hegdea15\Documents\NewGotoApp\GoToApp\AppService\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\hegdea15\Documents\NewGotoApp\GoToApp\AppService\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\hegdea15\Documents\NewGotoApp\GoToApp\AppService\bin\Microsoft.Owin.Security.dll
+C:\Users\hegdea15\Documents\NewGotoApp\GoToApp\AppService\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\hegdea15\Documents\NewGotoApp\GoToApp\AppService\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\hegdea15\Documents\NewGotoApp\GoToApp\AppService\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\hegdea15\Documents\NewGotoApp\GoToApp\AppService\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\hegdea15\Documents\NewGotoApp\GoToApp\AppService\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\hegdea15\Documents\NewGotoApp\GoToApp\AppService\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\hegdea15\Documents\NewGotoApp\GoToApp\AppService\bin\Newtonsoft.Json.dll
+C:\Users\hegdea15\Documents\NewGotoApp\GoToApp\AppService\bin\Owin.dll
+C:\Users\hegdea15\Documents\NewGotoApp\GoToApp\AppService\bin\System.Net.Http.Formatting.dll
+C:\Users\hegdea15\Documents\NewGotoApp\GoToApp\AppService\bin\System.Web.Helpers.dll
+C:\Users\hegdea15\Documents\NewGotoApp\GoToApp\AppService\bin\System.Web.Http.dll
+C:\Users\hegdea15\Documents\NewGotoApp\GoToApp\AppService\bin\System.Web.Http.Owin.dll
+C:\Users\hegdea15\Documents\NewGotoApp\GoToApp\AppService\bin\System.Web.Http.WebHost.dll
+C:\Users\hegdea15\Documents\NewGotoApp\GoToApp\AppService\bin\System.Web.Mvc.dll
+C:\Users\hegdea15\Documents\NewGotoApp\GoToApp\AppService\bin\System.Web.Optimization.dll
+C:\Users\hegdea15\Documents\NewGotoApp\GoToApp\AppService\bin\System.Web.Razor.dll
+C:\Users\hegdea15\Documents\NewGotoApp\GoToApp\AppService\bin\System.Web.WebPages.Deployment.dll
+C:\Users\hegdea15\Documents\NewGotoApp\GoToApp\AppService\bin\System.Web.WebPages.dll
+C:\Users\hegdea15\Documents\NewGotoApp\GoToApp\AppService\bin\System.Web.WebPages.Razor.dll
+C:\Users\hegdea15\Documents\NewGotoApp\GoToApp\AppService\bin\WebGrease.dll
+C:\Users\hegdea15\Documents\NewGotoApp\GoToApp\AppService\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\hegdea15\Documents\NewGotoApp\GoToApp\AppService\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\hegdea15\Documents\NewGotoApp\GoToApp\AppService\bin\Microsoft.AI.Web.xml
+C:\Users\hegdea15\Documents\NewGotoApp\GoToApp\AppService\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\hegdea15\Documents\NewGotoApp\GoToApp\AppService\bin\Microsoft.ApplicationInsights.xml
+C:\Users\hegdea15\Documents\NewGotoApp\GoToApp\AppService\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\hegdea15\Documents\NewGotoApp\GoToApp\AppService\bin\Newtonsoft.Json.xml
+C:\Users\hegdea15\Documents\NewGotoApp\GoToApp\AppService\bin\System.Net.Http.Formatting.xml
+C:\Users\hegdea15\Documents\NewGotoApp\GoToApp\AppService\bin\System.Web.Helpers.xml
+C:\Users\hegdea15\Documents\NewGotoApp\GoToApp\AppService\bin\System.Web.Http.xml
+C:\Users\hegdea15\Documents\NewGotoApp\GoToApp\AppService\bin\System.Web.Http.WebHost.xml
+C:\Users\hegdea15\Documents\NewGotoApp\GoToApp\AppService\bin\System.Web.Mvc.xml
+C:\Users\hegdea15\Documents\NewGotoApp\GoToApp\AppService\bin\System.Web.Optimization.xml
+C:\Users\hegdea15\Documents\NewGotoApp\GoToApp\AppService\bin\System.Web.Razor.xml
+C:\Users\hegdea15\Documents\NewGotoApp\GoToApp\AppService\bin\System.Web.WebPages.xml
+C:\Users\hegdea15\Documents\NewGotoApp\GoToApp\AppService\bin\System.Web.WebPages.Deployment.xml
+C:\Users\hegdea15\Documents\NewGotoApp\GoToApp\AppService\bin\System.Web.WebPages.Razor.xml
+C:\Users\hegdea15\Documents\NewGotoApp\GoToApp\AppService\bin\Antlr3.Runtime.pdb
+C:\Users\hegdea15\Documents\NewGotoApp\GoToApp\AppService\bin\EntityFramework.xml
+C:\Users\hegdea15\Documents\NewGotoApp\GoToApp\AppService\bin\EntityFramework.SqlServer.xml
+C:\Users\hegdea15\Documents\NewGotoApp\GoToApp\AppService\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\hegdea15\Documents\NewGotoApp\GoToApp\AppService\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\hegdea15\Documents\NewGotoApp\GoToApp\AppService\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\hegdea15\Documents\NewGotoApp\GoToApp\AppService\bin\Microsoft.Owin.xml
+C:\Users\hegdea15\Documents\NewGotoApp\GoToApp\AppService\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\hegdea15\Documents\NewGotoApp\GoToApp\AppService\bin\Microsoft.Owin.Security.xml
+C:\Users\hegdea15\Documents\NewGotoApp\GoToApp\AppService\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\hegdea15\Documents\NewGotoApp\GoToApp\AppService\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\hegdea15\Documents\NewGotoApp\GoToApp\AppService\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\hegdea15\Documents\NewGotoApp\GoToApp\AppService\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\hegdea15\Documents\NewGotoApp\GoToApp\AppService\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\hegdea15\Documents\NewGotoApp\GoToApp\AppService\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\hegdea15\Documents\NewGotoApp\GoToApp\AppService\bin\System.Web.Http.Owin.xml
+C:\Users\hegdea15\Documents\NewGotoApp\GoToApp\AppService\obj\Debug\AppService.dll
+C:\Users\hegdea15\Documents\NewGotoApp\GoToApp\AppService\obj\Debug\AppService.pdb
