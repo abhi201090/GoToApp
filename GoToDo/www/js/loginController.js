@@ -1,4 +1,4 @@
-﻿app.controller('loginController', function ($scope, $http, $state) {
+﻿app.controller('loginController', function ($scope, $http, $state, $ionicPopup) {
     $scope.login = function(){
         var data = {
             username: $scope.email,
@@ -31,8 +31,10 @@
             },
             function (error) {
 
-                var e = error;
-                console.log(error);
+                $ionicPopup.alert(
+                    {
+                        template:'Invalid email/password'
+                    })
             }
             );
     }

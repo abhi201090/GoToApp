@@ -1,4 +1,4 @@
-﻿app.controller('signUpController', function ($scope, $http) {
+﻿app.controller('signUpController', function ($scope, $http, $state, $ionicPopup) {
 
 
     $scope.selectedCountry ={};
@@ -994,7 +994,18 @@
 
         $http.post('http://gotoappservice.com/api/SignUp/Register', data)
         .then(function (response) {
-            var p = response;
+            var status = response.data;
+            if (status === 'Success') {
+                $ionicPopup.alert({
+                    template: 'Sign Up successful!\nYou can login now'
+                });
+                $state.go('login');
+            }
+            else {
+                $ionicPopup.alert({
+                    template:status
+                })
+            }
 
         }, function (error) {
             var p = error;

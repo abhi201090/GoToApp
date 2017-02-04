@@ -83,7 +83,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>02/01/2017 19:55:10</publishTime>
     </File>
     <File Include="bin/AppService.dll">
-      <publishTime>02/02/2017 14:14:56</publishTime>
+      <publishTime>02/03/2017 23:39:08</publishTime>
     </File>
     <File Include="bin/EntityFramework.dll">
       <publishTime>01/28/2017 17:14:47</publishTime>
@@ -317,7 +317,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>02/01/2017 19:54:50</publishTime>
     </File>
     <File Include="Web.config">
-      <publishTime>02/02/2017 14:15:06</publishTime>
+      <publishTime>02/03/2017 17:24:32</publishTime>
     </File>
   </ItemGroup>
 </Project>

@@ -87,3 +87,4 @@ C:\Users\hegdea15\Documents\NewGotoApp\GoToApp\AppService\bin\Microsoft.Owin.Sec
 C:\Users\hegdea15\Documents\NewGotoApp\GoToApp\AppService\bin\System.Web.Http.Owin.xml
 C:\Users\hegdea15\Documents\NewGotoApp\GoToApp\AppService\obj\Debug\AppService.dll
 C:\Users\hegdea15\Documents\NewGotoApp\GoToApp\AppService\obj\Debug\AppService.pdb
+C:\Users\hegdea15\Documents\NewGotoApp\GoToApp\AppService\obj\Debug\AppService.csprojResolveAssemblyReference.cache
