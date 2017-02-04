@@ -73,6 +73,8 @@ namespace AppService
                 firstName.Value = user.FirstName;
                 if (string.IsNullOrEmpty(user.LastName))
                     lastName.Value = DBNull.Value;
+                else
+                    lastName.Value = user.LastName;
                 email.Value = user.Email;
                 phNo.Value = user.PhNo;
                 password.Value = user.Password;
