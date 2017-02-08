@@ -1,11 +1,13 @@
 ﻿app.config(function ($stateProvider, $urlRouterProvider) {
     console.log('Was here!');
     $stateProvider.state('menu', {
+        cache: false,
         url: '/menu',
         abstract: true,
         templateUrl: 'templates/sideMenu.html'
     })
        .state('menu.home', {
+           cache:false,
            url: "/home",
            views: {
                'menuContent': {
@@ -14,16 +16,19 @@
            }
        })
         .state('login', {
+            cache:false,
             url: '/login',
             templateUrl: 'templates/login.html'
         })
      .state('signUp',
         {
+            cache: false,
             url: '/signUp',
             templateUrl: 'templates/signUp.html'
         })
      .state('menu.addTask',
         {
+            cache: false,
             url: '/addTask',
             views: {
                 'menuContent': {
@@ -33,6 +38,7 @@
         })
     .state('forgotPwd',
         {
+            cache: false,
             url: '/forgotPwd',
             templateUrl: 'templates/forgotPwd.html'
         });

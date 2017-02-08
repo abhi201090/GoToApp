@@ -1,6 +1,5 @@
 ﻿app.controller('taskController', function ($scope, $cordovaSQLite, $ionicPlatform) {
     $scope.allSessions = [];
-    var flag = false;
     var getTasks = function () {
         var query = "SELECT * FROM task";
         $cordovaSQLite.execute(db, query).then(function (res) {
@@ -29,8 +28,5 @@
         getTasks();
         //console.log(db);
     });
-    if (flag) {
-        getTasks();
-    }
 
 });
