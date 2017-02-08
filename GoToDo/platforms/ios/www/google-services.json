@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "981686413111",
+    "firebase_url": "https://starry-gravity-157817.firebaseio.com",
+    "project_id": "starry-gravity-157817",
+    "storage_bucket": "starry-gravity-157817.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:981686413111:android:88b2c8986ee4d376",
+        "android_client_info": {
+          "package_name": "com.android.gotoapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "981686413111-t61v434h3ml2r58sr6vfasemnnmnor4q.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA4jVIMjLlqXR6WvL4tuxg29dQ4dAcYM-w"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

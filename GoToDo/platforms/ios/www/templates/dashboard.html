@@ -1,0 +1,68 @@
+<ion-view class="has-header" view-title="Dashboard" ng-controller="taskController">
+    <ion-content class="has-header" scroll="false">
+        <div class="row">
+            <div class="col text-center">
+                <div class="list">
+                    <label class="item">
+                        No Tasks Allotted
+                    </label>
+                </div>
+            </div>
+        </div>
+    </ion-content>
+
+    <script id="new-task.html" type="text/ng-template">
+        <div class="modal" ng-controller="addTaskController">
+            <!-- Modal header bar -->
+            <ion-header-bar class="bar bar-dark">
+                <h1 class="title">New Task</h1>
+                <button class="button button-icon pull-right" ng-click="closeNewTask()">
+                    <i class="icon ion-ios-close-outline"></i>
+                </button>
+            </ion-header-bar>
+            <!-- Modal content area -->
+            <ion-content scroll="false">
+                <div class="row">
+                    <div class="col text-center">
+                        <form>
+                            <div class="list">
+                                <label class="item item-input">
+                                    <input type="text" placeholder="What do you need to do?">
+                                </label>
+                                <label class="item item-input">
+                                    <input type="text" placeholder="Where will you do it?">
+                                </label>
+                                <label class="item item-input">
+                                    <input type="text" placeholder="When will you do it?">
+                                </label>
+                                <label class="item item-input">
+                                    <input type="text" placeholder="Who can see your task?">
+                                </label>
+                            </div>
+                            <ion-item class="item-icon-right">
+                                <i ng-click="showDatePicker()"
+                                   class="icon ion-ios-calendar-outline"></i>
+                                {{ selectedDate }}
+                            </ion-item>
+                            <label class="item item-input item-select">
+                                <div class="input-label">
+                                    Set Priority
+                                </div>
+                                <select ng-model="priority" ng-init="priority=priorities[0]" ng-options="priority.name for priority in priorities"></select>
+                            </label>
+                            <div class="list">
+                                <input type="button" class="button button-dark" value="Submit" />
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </ion-content>
+        </div>
+            
+    </script>
+
+    <div class="add-task">
+        <button class="button button-dark button-large" style="border-radius:50%;" ng-click="newTask()"><i class="icon ion-plus"></i></button>
+    </div>
+</ion-view>
+

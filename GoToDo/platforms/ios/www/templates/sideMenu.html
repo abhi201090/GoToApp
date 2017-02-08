@@ -1,0 +1,54 @@
+﻿<ion-side-menus enable-menu-with-back-views="false">
+    <ion-side-menu-content>
+        <ion-nav-bar class="bar-dark" align-title="center">
+            <ion-nav-back-button>
+            </ion-nav-back-button>
+            <ion-nav-buttons side="left">
+                <button class="button button-icon button-clear ion-navicon" menu-toggle="left"></button>
+            </ion-nav-buttons>
+        </ion-nav-bar>
+        <ion-nav-view name="menuContent"></ion-nav-view>
+    </ion-side-menu-content>
+    <ion-side-menu side="left" >
+        <ion-pane class="side-menu-gradient">
+            <div class="list">
+                <div class="row" style="padding-bottom:10px;">
+                    <div class="col text-center">
+                        <img src="img/defaultProfilePic.png" class="avatar" />
+                    </div>
+                </div>
+               <div class="menu-items">
+                   <span>
+                       <i class="icon ion-android-person menu-icon"></i>
+                       <a class="menu-links">My Account</a>
+                   </span>
+               </div>
+                <div class="menu-items">
+                    <span>
+                        <i class="icon ion-android-done menu-icon"></i>
+                        <a class="menu-links">My Tasks</a>
+                    </span>
+                    
+                </div>
+                <div class="menu-items">
+                    <span>
+                        <i class="icon ion-android-people menu-icon"></i>
+                        <a class="menu-links">Shared Tasks</a>
+                    </span>
+                </div>
+                <div class="menu-items">
+                    <span>
+                        <i class="icon ion-location menu-icon"></i>
+                        <a class="menu-links">Tasks in my Area</a>
+                    </span>
+                </div>
+                <div class="menu-items">
+                    <span>
+                        <i class="icon ion-log-out menu-icon"></i>
+                        <a class="menu-links">Sign Out</a>
+                    </span>
+                </div>
+            </div>
+        </ion-pane>
+    </ion-side-menu>
+</ion-side-menus>

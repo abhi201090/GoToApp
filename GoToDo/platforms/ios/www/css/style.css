@@ -1,0 +1,91 @@
+/* Empty. Add your own CSS if you like */
+.center-align{
+    margin:auto;
+    text-align:center;
+}
+
+.text-box-style{
+    border:20px solid black;
+    border-radius:5px;
+}
+
+.font-class{
+    font-family:Arial, Helvetica, sans-serif;
+    color:gray;
+    font-size:13px;
+    text-decoration:none;
+}
+
+.forgot-password{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:10px;
+    text-decoration:underline;
+}
+
+.security-question{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:20px;
+    text-decoration:none;
+}
+
+.logo{
+    height:auto;
+    width:50%;
+}
+
+.side-menu-gradient{
+
+    background: rgba(33,33,33,1);
+    background: -moz-linear-gradient(top, rgba(33,33,33,1) 0%, rgba(50,50,50,1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(33,33,33,1)), color-stop(100%, rgba(50,50,50,1)));
+    background: -webkit-linear-gradient(top, rgba(33,33,33,1) 0%, rgba(50,50,50,1) 100%);
+    background: -o-linear-gradient(top, rgba(33,33,33,1) 0%, rgba(50,50,50,1) 100%);
+    background: -ms-linear-gradient(top, rgba(33,33,33,1) 0%, rgba(50,50,50,1) 100%);
+    background: linear-gradient(to bottom, rgba(33,33,33,1) 0%, rgba(50,50,50,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#212121', endColorstr='#323232', GradientType=0 );
+}
+
+.avatar{
+    border-radius:50%;
+    /*border-color:lightgray;
+    border-style:solid;
+    border-width:medium;*/
+    border:3px solid rgba(255,255,255,0.4);
+    height:auto;
+    width:40%;
+}
+
+.menu-items{
+    padding:20px;
+    border-bottom:1px solid rgba(255,255,255,0.4);
+}
+
+.menu-icon{
+    color:white;
+    padding-right:30px;
+}
+
+.menu-links{
+    font-family:Arial, Helvetica, sans-serif;
+    color:white;
+    
+}
+
+.add-task {
+    bottom: 10%;
+    z-index:9999;
+    position: absolute;
+    right: 40%;
+    text-align: center;
+}
+
+.validation-errors p{
+    font-size:12px;
+    text-align:left;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0; 
+}

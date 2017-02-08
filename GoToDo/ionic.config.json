@@ -1,6 +1,6 @@
 {
   "name": "io.cordova.myappe17f2c",
-  "app_id": "",
+  "app_id": "Test_ID",
   "gulpDependantTasks": [
     "tsc",
     "sass"

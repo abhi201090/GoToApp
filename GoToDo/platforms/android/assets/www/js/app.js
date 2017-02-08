@@ -16,6 +16,17 @@ var app = angular.module('starter', ['ionic', 'ngCordova'])
             // org.apache.cordova.statusbar required
             window.StatusBar.styleLightContent();
         }
+        var notificationOpenedCallback = function (jsonData) {
+            console.log('notificationOpenedCallback: ' + JSON.stringify(jsonData));
+        };
+        window.plugins.OneSignal
+            .startInit("d5a6f42b-c389-463a-a233-6d52bb415608")
+            .handleNotificationOpened(notificationOpenedCallback)
+            .endInit();
+        window.plugins.OneSignal.getIds(function (ids) {
+            console.log('getIds: ' + JSON.stringify(ids));
+            alert("userId = " + ids.userId + ", pushToken = " + ids.pushToken);
+        });
     });
 });
 

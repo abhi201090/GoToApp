@@ -3,7 +3,7 @@
 // 'starter' is the name of this angular module example (also set in a <body> attribute in index.html)
 // the 2nd parameter is an array of 'requires'
 // 'starter.controllers' is found in controllers.js
-var app = angular.module('starter', ['ionic','ngCordova'])
+var app = angular.module('starter', ['ionic', 'ngCordova'])
     .run(($ionicPlatform: ionic.platform.IonicPlatformService) => {
         $ionicPlatform.ready(() => {
             // hide the accessory bar by default (remove this to show the accessory bar above the keyboard
@@ -16,7 +16,19 @@ var app = angular.module('starter', ['ionic','ngCordova'])
                 // org.apache.cordova.statusbar required
                 window.StatusBar.styleLightContent();
             }
-        });
+            var notificationOpenedCallback = function (jsonData:any) {
+                console.log('notificationOpenedCallback: ' + JSON.stringify(jsonData));
+            };
+
+            window.plugins.OneSignal
+                .startInit("d5a6f42b-c389-463a-a233-6d52bb415608")
+                .handleNotificationOpened(notificationOpenedCallback)
+                .endInit();
+
+            window.plugins.OneSignal.getIds(function (ids) {
+                console.log('getIds: ' + JSON.stringify(ids));
+                alert("userId = " + ids.userId + ", pushToken = " + ids.pushToken);
+            });
+            
+        })
     });
-
-

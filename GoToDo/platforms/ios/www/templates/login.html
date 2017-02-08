@@ -1,0 +1,40 @@
+﻿
+    <ion-view name="login">
+        <script type="text/javascript">
+            console.log(window.location.href);
+        </script>
+        <ion-pane ng-controller="loginController">
+            <div class="row">
+                <div class="col text-center">
+                    <img class="logo" src="img/Logo.png" />
+                </div>
+            </div>
+            <div class="row">
+                <div class="col text-center">
+                    <div class="list">
+                        <label class="item item-input">
+                            <input type="email" placeholder="Email Address" ng-model="email"/>
+                        </label>
+                        <label class="item item-input">
+                            <input type="password" placeholder="Password" ng-model="password"/>
+                        </label>
+                        <span class="forgot-password">                            
+                                <a ui-sref="forgotPwd" class="font-class">Forgot Password</a>                            
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col text-center">
+                    <input type="button" value="Login" class="button button-dark" ng-click="login()" />
+                </div>
+            </div>
+            <div class="row">
+                <div class="col text-center ">
+                    <span>
+                        <a ui-sref="signUp" class="font-class">Not a member? Sign Up</a>
+                    </span>
+                </div>
+            </div>
+        </ion-pane>
+    </ion-view>

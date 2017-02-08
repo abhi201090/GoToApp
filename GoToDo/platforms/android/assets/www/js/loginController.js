@@ -1,5 +1,6 @@
-﻿app.controller('loginController', function ($scope, $http, $state, $ionicPopup) {
-    $scope.login = function(){
+﻿app.controller('loginController', function ($scope, $http, $state, $ionicPopup, $cordovaLocalNotification, $cordovaPush, $ionicPlatform) {
+
+    $scope.login = function () {
         var data = {
             username: $scope.email,
             password: $scope.password,
@@ -26,7 +27,17 @@
         $http(req)
         .then(
             function (response) {
+                var alarmTime = new Date();
+                alarmTime.setMinutes(alarmTime.getMinutes() + 2);
                 localStorage.setItem("tokenValue", response.access_token);
+                $cordovaLocalNotification.add({
+                    id:'1234',
+                    date: alarmTime,
+                    message: 'Sample Message',
+                    title: 'Sample Title'
+                }).then(function () {
+                    console.log('Added Notification');
+                });
                 $state.go("menu.home");
             },
             function (error) {
