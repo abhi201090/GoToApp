@@ -72,7 +72,7 @@
 }
 
 .add-task {
-    bottom: 10%;
+    bottom: 1%;
     z-index:9999;
     position: absolute;
     right: 40%;
@@ -88,4 +88,19 @@ input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
     -webkit-appearance: none;
     margin: 0; 
+}
+
+.green {
+  color: green;
+}
+.red {
+  color: red;
+}
+.yellow {
+  color: orange;
+}
+
+.card
+{
+     margin-bottom: 2px !important;
 }

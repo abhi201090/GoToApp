@@ -1,0 +1,45 @@
+﻿<ion-view title="Add Task">
+    <ion-nav-bar class="bar bar-dark">
+        <ion-nav-back-button class="button-clear">
+            <i class="ion-arrow-left-c"></i>
+        </ion-nav-back-button>
+    </ion-nav-bar>
+    <ion-content ng-controller="addTaskController">
+        <div class="row">
+            <div class="col text-center">
+                <form>
+                    <div class="list">
+                        <label class="item item-input">
+                            <input type="text" placeholder="Task Title" ng-model="task_title">
+                        </label>
+                        <label class="item item-input">
+                            <input type="text" placeholder="Breifly Describe your Task" ng-model="task_desc">
+                        </label>
+                    </div>
+                    <!--<ion-item class="item-icon-right">
+                        <i ng-click="showDatePicker()"
+                           class="icon ion-ios-calendar-outline"></i>
+                        {{ selectedDate }}
+                    </ion-item>-->
+                    <div>
+                        <div class="item item-icon-right" ion-datetime-picker ng-model="datetimeValue">
+                            
+                            <i class="icon ion-ios-calendar-outline"></i>
+                            {{datetimeValue| date: "medium"}}
+
+                        </div>
+                    </div>
+                    <label class="item item-input item-select">
+                        <div class="input-label">
+                            Set Priority
+                        </div>
+                        <select ng-model="priority" ng-init="priority=priorities[0]" ng-options="priority.name for priority in priorities"></select>
+                    </label>
+                    <div class="list">
+                        <input type="button" class="button button-dark" ng-click="insertTask()" value="Submit" />
+                    </div>
+                </form>
+            </div>
+        </div>
+    </ion-content>
+</ion-view>

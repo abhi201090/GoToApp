@@ -2,7 +2,7 @@
     console.log('Was here!');
     $stateProvider.state('menu', {
         url: '/menu',
-        abstract:true,
+        abstract: true,
         templateUrl: 'templates/sideMenu.html'
     })
        .state('menu.home', {
@@ -14,13 +14,22 @@
            }
        })
         .state('login', {
-        url: '/login',
-        templateUrl: 'templates/login.html'
-    })
+            url: '/login',
+            templateUrl: 'templates/login.html'
+        })
      .state('signUp',
         {
             url: '/signUp',
             templateUrl: 'templates/signUp.html'
+        })
+     .state('menu.addTask',
+        {
+            url: '/addTask',
+            views: {
+                'menuContent': {
+                    templateUrl: 'templates/addTask.html'
+                }
+            }
         })
     .state('forgotPwd',
         {
@@ -28,21 +37,21 @@
             templateUrl: 'templates/forgotPwd.html'
         });
 
-    //if (localStorage.getItem("tokenValue") === null) {
-    //    $urlRouterProvider.otherwise('/login');
-    //}
-    //else {
-    //    var validity = function (tokenValidity) {
-    //        return tokenValidity.check();
-    //    }
-    //    if (validity) {
-    //        $urlRouterProvider.otherwise('/menu/home');
-    //    }
-    //    else {
-    //        $urlRouterProvider.otherwise('/login');
-    //    }
-    //}
+    if (localStorage.getItem("tokenValue") === null) {
+        $urlRouterProvider.otherwise('/login');
+    }
+    else {
+        var validity = function (tokenValidity) {
+            return tokenValidity.check();
+        }
+        if (validity) {
+            $urlRouterProvider.otherwise('/menu/home');
+        }
+        else {
+            $urlRouterProvider.otherwise('/login');
+        }
+    }
 
-    $urlRouterProvider.otherwise('/login');
+    //$urlRouterProvider.otherwise('/login');
     console.log(window.location.href);
 });
