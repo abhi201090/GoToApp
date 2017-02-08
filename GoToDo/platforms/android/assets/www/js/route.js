@@ -22,13 +22,13 @@
         })
      .state('signUp',
         {
-            cache: false,
+            cache:false,
             url: '/signUp',
             templateUrl: 'templates/signUp.html'
         })
      .state('menu.addTask',
         {
-            cache: false,
+            cache:false,
             url: '/addTask',
             views: {
                 'menuContent': {
@@ -38,15 +38,17 @@
         })
     .state('forgotPwd',
         {
-            cache: false,
+            cache:false,
             url: '/forgotPwd',
             templateUrl: 'templates/forgotPwd.html'
         });
 
-    if (localStorage.getItem("tokenValue") === null) {
+    if (localStorage.getItem("tokenValue") === 'undefined' || localStorage.getItem("tokenValue") === null) {
         $urlRouterProvider.otherwise('/login');
+        console.log(localStorage.getItem("tokenValue"));
     }
     else {
+        console.log(localStorage.getItem("tokenValue"));
         var validity = function (tokenValidity) {
             return tokenValidity.check();
         }

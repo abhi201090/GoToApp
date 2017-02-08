@@ -29,7 +29,7 @@
             function (response) {
                 var alarmTime = new Date();
                 alarmTime.setMinutes(alarmTime.getMinutes() + 2);
-                localStorage.setItem("tokenValue", response.access_token);
+                localStorage.setItem("tokenValue", response.data.access_token);
                 $cordovaLocalNotification.add({
                     id:'1234',
                     date: alarmTime,
